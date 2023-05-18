@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="plays-first" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="context">
+          <p class="p-name"></p>
+        </div>
+        <div class="rounds">
+          <div><p class="round-one"></p></div>
+          <div><p class="round-two"></p></div>
+          <div><p class="round-three"></p></div>
+        </div>
+        <div class="play-again">
+          <button class="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-body">
+      <div class="header">
+        <div class="heading"><h2>Enter your Names</h2></div>
+        <div class="players">
+          <div class="player-one">
+            <div class="one-title">Player One:</div>
+            <input
+              type="text"
+              class="plays-first"
+              pattern="[A-Za-z]+"
+              placeholder="player one name"
+            />
+          </div>
+
+          <div class="player-two">
+            <div style="text-align: right" class="two-title">Player Two:</div>
+            <input
+              type="text"
+              class="plays-second"
+              pattern="[A-Za-z]+"
+              placeholder="player two name"
+            />
+          </div>
+        </div>
+        <div class="btn" style="display: flex; justify-content: center">
+          <button class="play-btn">Submit</button>
+        </div>
+      </div>
+      <div class="sidebar-left"></div>
+      <div id="myContent">
+        <div class="gamebar one"></div>
+        <div class="gamebar two"></div>
+        <div class="gamebar three"></div>
+        <div class="gamebar four"></div>
+        <div class="gamebar five"></div>
+        <div class="gamebar six"></div>
+        <div class="gamebar seven"></div>
+        <div class="gamebar eight"></div>
+        <div class="gamebar nine"></div>
+      </div>
+      <div class="sidebar-right"></div>
+      <div class="footer">
+        <div class="winner-one">
+          <div class="one-winner"></div>
+          <span class="score-one"></span>
+        </div>
+        <div class="play-again">
+          <button class="reset">RESET</button>
+        </div>
+
+        <div class="winner-two">
+          <div class="two-winner"></div>
+          <span class="score-two"></span>
+        </div>
+        <div class="draw">
+          DRAWS :
+          <div class="score-draw"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
